@@ -1,0 +1,325 @@
+body{
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+}
+
+/* Font and base body styles */
+:root {
+  --primary: #0077b6;
+  --light-accent: #91daff;
+  --dark-accent: #0063a0;
+  --navy: #00295d;
+  --medium-accent: #80caff;
+  --white: #ffffff;
+  --light-bg: #f8f9fa;
+  --text-dark: #1e293b;
+  --text-light: #ffffff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color:whitesmoke;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: var(--navy);
+  box-shadow: 0 2px 15px rgba(0, 40, 85, 0.2);
+  padding: 0.5rem 1rem;
+  min-height: 60px;
+  z-index: 1030;
+}
+
+.navbar-brand img {
+  height: 48px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0 5px;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: white;
+  background-color: var(--dark-accent);
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-icons .nav-link {
+  padding: 5px 8px;
+  margin: 0 3px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    padding: 15px;
+    z-index: 1020;
+  }
+
+  .navbar-nav .nav-item{
+    margin:5px 0px;
+
+  }
+
+  .navbar-brand img {
+    height: 42px;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 10px;
+    
+    margin-top: 10px;
+  }
+}
+/* Filter Buttons */
+.filter-btn {
+  margin: 0 5px 10px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.filter-btn.active {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/* Ride Cards */
+.ride-card {
+  transition: all 0.3s ease;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height:250px;
+  display:block;
+  margin: 0 auto;
+} 
+
+/* Card styling */
+.ride-card .card {
+  background-color:rgb(228, 226, 226);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(0.95);
+}
+
+/* Hide for filter logic */
+.ride-card.hide {
+  display: none;
+}
+
+/* Enlarge image styling */
+.enlarge-img {
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.enlarge-img:hover {
+  transform: scale(1.03);
+}
+
+/* Card Text Styling */
+.card-title {
+  font-size: 1.1rem;
+  font-weight:bolder;
+  background-color:var(--medium-accent);
+  padding:10px;
+  color: var(white);
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+
+.heading{
+  height: auto;
+  background-color: var(--medium-accent);
+  padding-top: 40px;
+  color: white;
+}
+
+.heading h1{
+  color: navy;
+  font-weight: bolder;
+  font-size:70px;
+}
+
+.heading h2{
+  font-weight: bolder;
+  font-size:50px;
+}
+.headline h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: var(--medium-accent);
+  
+  color:white;
+  font-weight: bolder;
+}
+.headlines h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   height: 80px;
+  background-color: var(--medium-accent);
+  color:white;
+  font-weight: bolder;
+}
+
+.video-card {
+  transition: transform 0.3s ease;
+  background-color: var(--white);
+  border: 1px solid var(--medium-accent);
+}
+
+.video-card:hover {
+  transform: scale(1.02);
+}
+
+.ratio {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Additional professional touches */
+.gallery-section {
+  padding: 2rem 0;
+  background-color: var(--white);
+}
+
+.filter-container {
+  background-color: var(--light-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+/* guest photo */
+.guestphoto{
+  object-fit: cover;
+  display:block;
+  margin: 0 auto;
+  height:350px;
+  width:350px;
+}
+
+
+/* Footer */
+.footer-section {
+  background-color: var(--navy);
+  color: var(--white);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-bottom: 0;
+}
+
+.footer-section h5 {
+  font-weight: 200;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer-section h5::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background: var(--light-accent);
+}
+
+.footer-section a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--light-accent);
+  padding-left: 5px;
+}
+
+.footer-section .social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.footer-section .social-icons a:hover {
+  background: var(--primary);
+  transform: translateY(-3px);
+  color: #fff;
+}
+
+.footer-section address p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section .input-group button {
+  background: var(--primary);
+  border: none;
+  color: #fff;
+}
+
+.footer-section .input-group button:hover {
+  background: #3da8d8;
+}
+
+.footer-section hr {
+  opacity: 0.1;
+}
+
+.footer-section .list-inline-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+@media (max-width:400px){
+  .heading h1{
+    font-size: 2rem;
+    font-weight: bolder;
+
+  }
+
+  .heading h2{
+    font-size:1.5rem;
+    font-weight: bolder;
+  }
+
+}

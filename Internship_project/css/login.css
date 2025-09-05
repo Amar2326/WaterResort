@@ -1,0 +1,131 @@
+:root {
+  --primary: #0077b6;
+  --light-accent: #91daff;
+  --dark-accent: #0063a0;
+  --navy: #00295d;
+  --medium-accent: #80caff;
+  --white: #ffffff;
+  --light-bg: #f8f9fa;
+  --text-dark: #1e293b;
+  --text-light: #ffffff;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+body {
+    background-color: var(--light-accent);
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.auth-card {
+    max-width: 420px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 35px 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 128, 128, 0.35);
+    border: 2px solid rgba(13, 198, 198, 0.6);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+.auth-card:hover {
+    box-shadow: 0 20px 50px rgba(0, 128, 128, 0.5);
+    transform: scale(1.01);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo img {
+    width: 90px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+h3 {
+    font-weight: 700;
+    color: #008080;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 1.2px;
+}
+
+.form-label {
+    font-weight: 700;
+    color: #007777;
+    margin-bottom: 6px;
+}
+
+input.form-control {
+    border-radius: 12px;
+    border: 2px solid #0dc6c6;
+    padding: 10px 14px;
+    box-shadow: inset 0 2px 6px rgba(13, 198, 198, 0.15);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.form-control:focus {
+    border-color: #0aa;
+    box-shadow: 0 0 8px rgba(0, 191, 166, 0.3);
+    outline: none;
+}
+
+button {
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    transition: all 0.3s ease;
+    padding: 10px 18px;
+}
+
+button.btn-primary {
+    background-color: #00bfa6;
+    border: none;
+}
+
+button.btn-primary:hover {
+    background-color: #009f8e;
+    box-shadow: 0 6px 15px rgba(0, 191, 166, 0.4);
+}
+
+button.btn-success {
+    background-color:green;
+    border: none;
+}
+
+button.btn-success:hover {
+    background-color:green;
+    box-shadow: 0 6px 15px rgba(61, 143, 45, 0.45);
+}
+
+.toggle-link {
+    cursor: pointer;
+    color: #0d8172;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.toggle-link:hover {
+    color: #008080;
+}
+
+.form-error {
+    color: #d9534f;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+#toggleText {
+    color: #007777;
+}

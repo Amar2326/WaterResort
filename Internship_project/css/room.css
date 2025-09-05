@@ -1,0 +1,284 @@
+:root {
+  --primary: #0077b6;
+  --light-accent: #91daff;
+  --dark-accent: #0063a0;
+  --navy: #00295d;
+  --medium-accent: #80caff;
+  --white: #ffffff;
+  --light-bg: #f8f9fa;
+  --text-dark: #1e293b;
+  --text-light: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: var(--navy);
+  box-shadow: 0 2px 15px rgba(0, 40, 85, 0.2);
+  padding: 0.5rem 1rem;
+  min-height: 60px;
+  z-index: 1030;
+}
+
+.navbar-brand img {
+  height: 48px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0 5px;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: white;
+  background-color: var(--dark-accent);
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-icons .nav-link {
+  padding: 5px 8px;
+  margin: 0 3px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    padding: 15px;
+    z-index: 1020;
+  }
+
+  .navbar-nav .nav-item{
+    margin:5px 0px;
+
+  }
+
+  .navbar-brand img {
+    height: 42px;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 10px;
+
+    margin-top: 10px;
+  }
+}
+
+/* Hero Section */
+.rooms-hero {
+  background: linear-gradient(rgba(0, 47, 85, 0.7), rgba(0, 47, 85, 0.7)),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+}
+
+/* Room Cards */
+.room-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.room-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.room-img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.badge-amenity {
+  background-color: var(--light-blue);
+  color: white;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* Testimonials */
+.testimonial-card {
+  background-color: #f8f9fa;
+  border-left: 4px solid var(--sky-blue);
+}
+
+/* Icons */
+.icon-box {
+  width: 80px;
+  height: 80px;
+}
+
+/* Services */
+h2.section-title {
+  font-family: "Courier New", cursive;
+  font-weight: bold;
+}
+
+.service-card {
+  border: 2px solid #0077b6;
+  border-radius: 16px;
+  transition: 0.3s ease;
+  background-color: #fff;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #0077b6;
+  margin-bottom: 12px;
+}
+
+.service-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.special-card {
+  background-color: #fdf2e9;
+}
+
+/* Footer */
+.footer-section {
+  background: black;
+}
+
+.footer-section h5 {
+  font-weight: 200;
+  position: relative;
+  padding-bottom: 12px;
+  color: #fff;
+}
+
+.footer-section h5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background: #4fc3f7;
+}
+
+.footer-section a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #4fc3f7;
+  padding-left: 5px;
+}
+
+.footer-section .social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.footer-section .social-icons a:hover {
+  background: #4fc3f7;
+  transform: translateY(-3px);
+  color: #fff;
+}
+
+.footer-section address p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section .input-group button {
+  background: #4fc3f7;
+  border: none;
+  color: #fff;
+}
+
+.footer-section .input-group button:hover {
+  background: #3da8d8;
+}
+
+.footer-section hr {
+  opacity: 0.1;
+}
+
+.footer-section .list-inline-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+/* AC/Non-AC Toggle Styles */
+.room-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 50px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.room-filter-btn {
+  padding: 10px 25px;
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.room-filter-btn.active {
+  background-color: var(--primary);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 119, 182, 0.3);
+}
+
+.room-type-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--primary);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 10;
+}
+
+.room-container {
+  position: relative;
+}

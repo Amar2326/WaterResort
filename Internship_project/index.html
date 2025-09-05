@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue Wave - Luxury Water Resort</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand p-0" href="index.html">
+          <img
+            src="../images/newlogo.png"
+            alt="Azure Oasis Logo"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery1.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prices.html">Prices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="food.html">Foods</a>
+            </li>
+          </ul>
+
+          <!-- Right side (social + booking + login) -->
+          <ul class="navbar-nav social-icons mb-2 mb-lg-0 align-items-center">
+
+          <ul class="navbar-nav social-icons mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="https://facebook.com" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://instagram.com" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+
+            <!-- Book Now button -->
+        <li class="nav-item ms-3">
+          <a href="booking.html" id="bookBtn" class="btn btn-success">Book Now</a>
+        </li>
+
+        <!-- Login/Logout buttons -->
+        <li class="nav-item ms-2">
+          <a href="login.html" id="loginLink" class="btn btn-outline-light">Login</a>
+        </li>
+        <li class="nav-item ms-2 d-none" id="logoutItem">
+          <button class="btn btn-danger" id="logoutBtn">Logout</button>
+        </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="resortCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#resortCarousel"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#resortCarousel"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#resortCarousel"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../images/slider2.jpg" class="d-block w-100" alt="Luxury pool" />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1642717841683-c0323214617c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block w-100"
+            alt="Family enjoying thrilling water slides"
+            loading="lazy"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1567970850635-1416d549afb6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block w-100"
+            alt="Kids area"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#resortCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#resortCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!--key features-->
+    <div class="features">
+      <h2>Blue Wave</h2>
+      <h4>Where Every Day is a Splashing Adventure!</h4>
+    </div>
+
+    <!-- Cards -->
+    <div class="card-row">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/card1.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Wave Pool</h5>
+              <p class="card-text">
+                Experience the trill of ocean-like waves right in the heart of
+                our resort. Peerfect for families, kids, and wave lovers alike!
+                Dive into excitement and float and fun.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/card2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Water Slides</h5>
+              <p class="card-text">
+                Get your adrenalie pumping on our high-speed water slides from
+                twisting tunnels to giant drops, there's a slide for every
+                thrill seaker!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/card3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Rain Dance Zone</h5>
+              <p class="card-text">
+                Dance to the beat under showers of water and colourful lights! A
+                perfect mix of music, rain, and fun to referesh your mood and
+                energy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overview Section -->
+    <section class="overview-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="overview-content">
+              <h2 class="section-title mb-4">
+                Welcome to <span class="text-primary">Blue Wave</span> Water
+                Resort
+              </h2>
+              <p class="lead mb-4">
+                The ultimate aquatic adventure destination where luxury meets
+                excitement!
+              </p>
+
+              <div class="features-list">
+                <div class="feature-item d-flex mb-3">
+                  <div class="feature-icon me-3">
+                    <i class="fas fa-water"></i>
+                  </div>
+                  <div>
+                    <h5 class="feature-title">10+ Thrilling Attractions</h5>
+                    <p class="feature-text mb-0">
+                      From high-speed slides to relaxing lazy rivers
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item d-flex mb-3">
+                  <div class="feature-icon me-3">
+                    <i class="fas fa-umbrella-beach"></i>
+                  </div>
+                  <div>
+                    <h5 class="feature-title">Premium Amenities</h5>
+                    <p class="feature-text mb-0">
+                      Luxury cabanas, spa services, and gourmet dining
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item d-flex mb-3">
+                  <div class="feature-icon me-3">
+                    <i class="fas fa-child"></i>
+                  </div>
+                  <div>
+                    <h5 class="feature-title">Family-Friendly</h5>
+                    <p class="feature-text mb-0">
+                      Safe, fun areas for all age groups
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cta-buttons mt-4">
+                <a href="booking.html" class="btn btn-primary btn-lg me-3"
+                  >Book Your Visit</a
+                >
+                <a href="gallery1.html" class="btn btn-outline-primary btn-lg"
+                  >Explore Attractions</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="overview-image">
+              <img
+                src="https://aquatica.com/orlando/-/media/migrated-media/seaworld-orlando/blogs/featured-images/2023/june/660x410-apo-2023-turis-kid-cove.jpg?hash=FD086AF3D52AD05C51768D94C8C06A5ADE86E379&version=1_202306082139"
+                alt="Blue Wave Resort Overview"
+                class="img-fluid rounded shadow-lg"
+                loading="lazy"
+              />
+              <div class="image-badge bg-primary text-white">
+                <div class="badge-content">
+                  <span class="d-block">Over</span>
+                  <span class="d-block display-6">50,000+</span>
+                  <span class="d-block">Happy Visitors</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--services-->
+
+    <section class="py-5">
+      <div class="container">
+        <h2 class="section-title mb-4">ServiceS we Offer</h2>
+        <div class="row g-4">
+          <!-- Repeatable Card -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="service-card text-center p-4 h-100">
+              <i class="bi bi-car-front service-icon"></i>
+              <p class="service-title">Parking</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="service-card text-center p-4 h-100">
+              <i class="bi bi-egg-fried service-icon"></i>
+              <p class="service-title">Food & Drinks</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="service-card text-center p-4 h-100">
+              <i class="bi bi-box-seam service-icon"></i>
+              <p class="service-title">Lockers</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="service-card text-center p-4 h-100">
+              <i class="bi bi-truck-front service-icon"></i>
+              <p class="service-title">Ambulance</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="service-card text-center p-4 h-100">
+              <i class="bi bi-person service-icon"></i>
+              <p class="service-title">Changing Room</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="service-card text-center p-4 h-100">
+              <i class="bi bi-shield-lock service-icon"></i>
+              <p class="service-title">Women's Safety</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="service-card text-center p-4 h-100">
+              <i class="bi bi-camera service-icon"></i>
+              <p class="service-title">Selfie Corner</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="service-card text-center p-4 h-100">
+              <i class="bi bi-emoji-smile service-icon"></i>
+              <p class="service-title">Kids Area</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Review-->
+
+    <!-- ===== Review Section Start ===== -->
+    <section class="py-5" style="background-color: #6ec9ff">
+      <div class="container">
+        <h2
+          class="text-center text-white mb-2"
+          style="font-family: 'Brush Script MT', cursive; font-size: 2.8rem"
+        >
+          Testimonials
+        </h2>
+        <h5 class="text-center text-white fw-bold mb-4">
+          Our Customer's Reviews
+        </h5>
+
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                  <div
+                    class="card special-card border-0 shadow rounded-4 p-4 text-center h-50"
+                  >
+                    <div class="text-warning fs-5 mb-2">★★★★★</div>
+                    <p class="mb-3">
+                      We went for a Birthday Party and friends get together. The
+                      service was great, food was good overall...
+                    </p>
+                    <img
+                      src=""
+                      class="rounded-circle mb-2"
+                      width="50"
+                      alt="Hardik"
+                    />
+                    <h6 class="fw-bold mb-0">Hardik Shah</h6>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                  <div
+                    class="card special-card border-0 shadow rounded-4 p-4 text-center h-50"
+                  >
+                    <div class="text-warning fs-5 mb-2">★★★★★</div>
+                    <p class="mb-3">
+                      I recently had one day trip at the Royal Garden Resort and
+                      had a fantastic experience...
+                    </p>
+                    <img
+                      src=""
+                      class="rounded-circle mb-2"
+                      width="50"
+                      alt="Pranali"
+                    />
+                    <h6 class="fw-bold mb-0">Pranali Dalbanjan</h6>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                  <div
+                    class="card special-card border-0 shadow rounded-4 p-4 text-center h-50"
+                  >
+                    <div class="text-warning fs-5 mb-2">★★★★★</div>
+                    <p class="mb-3">
+                      Rooms could have been better in terms of cleaning. But the
+                      food was excellent...
+                    </p>
+                    <img
+                      src=""
+                      class="rounded-circle mb-2"
+                      width="50"
+                      alt="Laxmi"
+                    />
+                    <h6 class="fw-bold mb-0">Laxmi Sharma</h6>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                  <div
+                    class="card special-card border-0 shadow rounded-4 p-4 text-center h-50"
+                  >
+                    <div class="text-warning fs-5 mb-2">★★★★★</div>
+                    <p class="mb-3">
+                      Amazing experience. The water park is very good with lots
+                      of slides...
+                    </p>
+                    <img
+                      src=""
+                      class="rounded-circle mb-2"
+                      width="50"
+                      alt="Yashraj"
+                    />
+                    <h6 class="fw-bold mb-0">Yashraj Chauhan</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <!-- More cards -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                  <div
+                    class="card special-card border-0 shadow rounded-4 p-4 text-center h-50"
+                  >
+                    <div class="text-warning fs-5 mb-2">★★★★★</div>
+                    <p class="mb-3">
+                      Great water rides and family-friendly environment. Staff
+                      was helpful and courteous.
+                    </p>
+                    <img
+                      src=""
+                      class="rounded-circle mb-2"
+                      width="50"
+                      alt="Ravi"
+                    />
+                    <h6 class="fw-bold mb-0">Ravi Patel</h6>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                  <div
+                    class="card special-card border-0 shadow rounded-4 p-4 text-center h-50"
+                  >
+                    <div class="text-warning fs-5 mb-2">★★★★★</div>
+                    <p class="mb-3">
+                      Great water rides and family-friendly environment. Staff
+                      was helpful and courteous.
+                    </p>
+                    <img
+                      src=""
+                      class="rounded-circle mb-2"
+                      width="50"
+                      alt="ashish"
+                    />
+                    <h6 class="fw-bold mb-0">ashish maurya</h6>
+                  </div>
+                </div>
+
+                <!-- Add more cards here if needed -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon bg-black text-dark rounded-circle shadow"
+              style="padding: 15px"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon bg-black text-dark rounded-circle shadow"
+              style="padding: 15px"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Review Section End ===== -->
+
+    <!--Footer-->
+    <footer class="footer-section bg-dark text-white pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <!-- About Column -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Bluewave Water Resort</h5>
+            <p>
+              Experience luxury and relaxation at our world-class water resort.
+              Enjoy premium amenities, thrilling water slides, and serene pools
+              surrounded by tropical landscapes.
+            </p>
+            <div class="mt-4">
+              <a href="#" class="text-white me-3"
+                ><i class="fas fa-phone"></i> +1 234 567 8900</a
+              ><br />
+              <a href="#" class="text-white"
+                ><i class="fas fa-envelope"></i> info@bluewave.com</a
+              >
+            </div>
+          </div>
+
+          <!-- Quick Links Column -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-white">Home</a></li>
+              <li class="mb-2"><a href="#" class="text-white">Gallery</a></li>
+              <li class="mb-2"><a href="#" class="text-white">Prices</a></li>
+              <li class="mb-2"><a href="#" class="text-white">Rooms</a></li>
+              <li class="mb-2"><a href="#" class="text-white">Foods</a></li>
+              
+            </ul>
+          </div>
+
+          <!-- Contact Column -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Location</h5>
+            <address>
+              <p>
+                <i class="fas fa-map-marker-alt me-2"></i> 123 Ocean View
+                Drive<br />Virar, FL 33101
+              </p>
+            </address>
+            <h5 class="text-uppercase mb-3">Opening Hours</h5>
+            <p>
+              Monday - Friday: 9:00 AM - 8:00 PM<br />
+              Saturday - Sunday: 8:00 AM - 10:00 PM
+            </p>
+          </div>
+
+          <!-- Newsletter Column -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-uppercase mb-4">Newsletter</h5>
+            <p>Subscribe to our newsletter for special offers and updates.</p>
+            <form class="mb-3">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  aria-label="Your Email"
+                />
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+            <h5 class="text-uppercase mb-3">Follow Us</h5>
+            <div class="social-icons">
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-facebook-f fa-lg"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-twitter fa-lg"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4 bg-light" />
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">
+              &copy; 2023 Bluewave. Water Resort. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Terms of Use</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+  // Check login status
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+  if (isLoggedIn === "true") {
+    document.getElementById("loginLink").classList.add("d-none");
+    document.getElementById("logoutItem").classList.remove("d-none");
+  }
+
+  // Book Now button logic
+  document.getElementById("bookBtn").addEventListener("click", function () {
+    if (isLoggedIn === "true") {
+      window.location.href = "booking.html"; // booking page
+    } else {
+      window.location.href = "login.html"; // redirect to login if not signed in
+    }
+  });
+
+  // Logout button logic
+  document.getElementById("logoutBtn").addEventListener("click", function () {
+    localStorage.removeItem("isLoggedIn");
+    window.location.href = "index.html"; // redirect to home after logout
+  });
+</script>
+  </body>
+</html>

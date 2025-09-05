@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue Wave - Luxury Water Resort</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand p-0" href="index.html">
+          <img
+            src="../images/newlogo.png"
+            alt="Azure Oasis Logo"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery1.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="prices.html">Prices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="food.html">Foods</a>
+            </li>
+          </ul>
+
+          <!-- Right side (social + booking + login) -->
+          <ul class="navbar-nav social-icons mb-2 mb-lg-0 align-items-center">
+
+          <ul class="navbar-nav social-icons mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="https://facebook.com" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://instagram.com" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+
+            <!-- Book Now button -->
+        <li class="nav-item ms-3">
+          <a href="booking.html" id="bookBtn" class="btn btn-success">Book Now</a>
+        </li>
+
+        <!-- Login/Logout buttons -->
+        <li class="nav-item ms-2">
+          <a href="login.html" id="loginLink" class="btn btn-outline-light">Login</a>
+        </li>
+        <li class="nav-item ms-2 d-none" id="logoutItem">
+          <button class="btn btn-danger" id="logoutBtn">Logout</button>
+        </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container text-center">
+        <h1 class="display-4">
+          Experience Aquatic<br class="d-none d-md-block" />Paradise
+        </h1>
+        <p class="lead mx-auto">
+          Choose the perfect package for your unforgettable water adventure
+        </p>
+         <a href="#pricing" class="btn btn-white-filled">View Pricing</a>
+         <a href="#offers" class="btn btn-outline-light-custom">Offers</a>
+         <a href="#compare" class="btn btn-outline-light-custom">Compare</a>
+
+      </div>
+    </section>
+    <!--Ticket section-->
+    <section class="pricing-section">
+      <div class="container">
+        <div class="text-center pricing-heading mb-4">
+          <h2>Ticket Prices</h2>
+          <p class="lead">
+            Waterpark Ticket — choose a date range to view the applicable rates
+          </p>
+        </div>
+
+        <!-- Card wrapper -->
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="card pricing-card">
+              <!-- Nav tabs for seasons / date ranges -->
+              <div class="bg-white border-bottom nav-season">
+                <ul
+                  class="nav nav-tabs align-items-center"
+                  id="pricingTabs"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="season1-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#season1"
+                      type="button"
+                      role="tab"
+                      aria-controls="season1"
+                      aria-selected="true"
+                    >
+                      1st July - 30th Sept 2025
+                    </button>
+                  </li>
+                  <li
+                    class="nav-item ms-auto d-none d-md-flex"
+                    role="presentation"
+                  >
+                    <small class="text-muted"
+                      >All prices shown in INR • Taxes included</small
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Tab content -->
+              <div class="card-body p-0">
+                <div class="tab-content">
+                  <!-- Season 1 -->
+                  <div
+                    class="tab-pane fade show active"
+                    id="season1"
+                    role="tabpanel"
+                    aria-labelledby="season1-tab"
+                  >
+                    <div class="table-responsive">
+                      <table
+                        class="table pricing-table mb-0 align-middle text-center"
+                      >
+                        <thead>
+                          <tr>
+                            <th scope="col">&nbsp;</th>
+                            <th scope="col">
+                              Regular Ticket
+                              <small class="d-block">Adult</small>
+                            </th>
+                            <th scope="col">
+                              Regular Ticket
+                              <small class="d-block">Child</small>
+                            </th>
+                            <th scope="col">
+                              Express Ticket
+                              <small class="d-block">Adult/Child</small>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="type-cell">Weekdays</td>
+                            <td class="md-price-amount">
+                              ₹1099<span class="text-muted small">*</span>
+                            </td>
+                            <td class="md-price-amount">
+                              ₹899<span class="text-muted small">*</span>
+                            </td>
+                            <td class="md-price-amount">
+                              ₹1749<span class="text-muted small">*</span>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="type-cell">Weekends</td>
+                            <td class="md-price-amount">
+                              ₹1199<span class="text-muted small">*</span>
+                            </td>
+                            <td class="md-price-amount">
+                              ₹999<span class="text-muted small">*</span>
+                            </td>
+                            <td class="md-price-amount">
+                              ₹1849<span class="text-muted small">*</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <!-- card footer with CTA -->
+                    <div class="card-action">
+                      <div class="note">
+                        * Peak/express surcharges may apply.
+                        <a href="#" class="link-primary">View details</a>
+                      </div>
+                      <div><a href="booking.html" button class="btn btn-cta" id="bookNowBtn">
+                          BOOK NOW</a>
+                        </>
+                      </div>
+                    </div>
+
+
+
+
+
+                  </div>
+    </section>
+
+                  <div class="container-sm py-4"></div>
+
+                  <h2 id="offers" class="offers">GRAB THESE AMAZING OFFERS TODAY!</h2>
+
+                  <div class="container-sm py-4">
+                    <!-- Offer 1 - Image Right -->
+                    <div class="promo-card row g-0 h-400 mb-4">
+                      <div class="col-lg-6 promo-left">
+                        <h2 class="promo-title">
+                          Small group offer 10% off on 5+ tickets
+                        </h2>
+                        <p class="text-muted mb-4">
+                          Make it a splash-tastic getaway — exclusive online
+                          offer for dreamy monsoon escapes!
+                        </p>
+                        <ul class="promo-features list-unstyled">
+                          <li>
+                            <i class="bi bi-arrow-right-short feature-icon"></i
+                            >Skip the lines with
+                            <strong>Express Entry for couples</strong> on select
+                            thrilling rides
+                          </li>
+                          <li>
+                            <i class="bi bi-currency-rupee feature-icon"></i
+                            >Feast together with
+                            <strong>₹800 worth of Food Coupons</strong> at the
+                            Water Park
+                          </li>
+                          <li>
+                            <i class="bi bi-building feature-icon"></i>Relax in
+                            style with a
+                            <strong
+                              >1-Night Stay at Sterling Stolen Heaven,
+                              Lonavala</strong
+                            >
+                          </li>
+                          <li>
+                            <i class="bi bi-globe feature-icon"></i>Exclusive
+                            online offer — Book now and turn your day into a
+                            dreamy escape!
+                          </li>
+                        </ul>
+                        <div class="mt-3">
+                          <a href="#" class="btn btn-danger me-2"
+                            ><i class="bi bi-eye-fill"></i> View More</a
+                          >
+                          <a href="booking.html" class="btn btn-outline-primary"
+                            ><i class="bi bi-calendar-check"></i> Book Now</a
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-6 position-relative promo-right">
+                        <span class="price-badge">Starting at ₹6099/-</span>
+                        <img
+                          src="offer1.jpg"
+                          alt="Couple Resort"
+                          class="photo"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Offer 2 - Image Left -->
+                    <div
+                      class="promo-card row g-0 h-400 mb-4 flex-lg-row-reverse"
+                    >
+                      <div class="col-lg-6 promo-left">
+                        <h2 class="promo-title">College ID Offer</h2>
+                        <p class="text-muted mb-4">
+                          Enjoy thrilling rides and a fun-filled family day at
+                          unbeatable prices!
+                        </p>
+                        <ul class="promo-features list-unstyled">
+                          <li>
+                            <i class="bi bi-arrow-right-short feature-icon"></i
+                            >Unlimited water rides for the whole family
+                          </li>
+                          <li>
+                            <i class="bi bi-currency-rupee feature-icon"></i
+                            >₹500 worth of food coupons included
+                          </li>
+                          <li>
+                            <i class="bi bi-building feature-icon"></i>Free
+                            locker access and parking
+                          </li>
+                          <li>
+                            <i class="bi bi-gift feature-icon"></i>Special
+                            souvenir for kids
+                          </li>
+                        </ul>
+                        <div class="mt-3">
+                          <a href="#" class="btn btn-danger me-2"
+                            ><i class="bi bi-eye-fill"></i> View More</a
+                          >
+                          <a href="booking.html" class="btn btn-outline-primary"
+                            ><i class="bi bi-calendar-check"></i> Book Now</a
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-6 position-relative promo-right">
+                        <span class="price-badge">Starting at ₹4599/-</span>
+                        <img src="offer2.jpg" alt="Family Fun" class="photo" />
+                      </div>
+                    </div>
+
+                    <!-- Offer 3 - Image Right -->
+                    <div class="promo-card row g-0 h-400 mb-4">
+                      <div class="col-lg-6 promo-left">
+                        <h2 class="promo-title">Thursday Bonus</h2>
+                        <p class="text-muted mb-4">
+                          Perfect for adrenaline junkies looking for a day
+                          packed with thrills!
+                        </p>
+                        <ul class="promo-features list-unstyled">
+                          <li>
+                            <i class="bi bi-arrow-right-short feature-icon"></i
+                            >Express entry to all thrill rides
+                          </li>
+                          <li>
+                            <i class="bi bi-currency-rupee feature-icon"></i
+                            >Includes ₹300 worth of snacks
+                          </li>
+                          <li>
+                            <i class="bi bi-clock-history feature-icon"></i
+                            >Extended park hours for pass holders
+                          </li>
+                          <li>
+                            <i class="bi bi-trophy feature-icon"></i>Chance to
+                            win exciting prizes
+                          </li>
+                        </ul>
+                        <div class="mt-3">
+                          <a href="#" class="btn btn-danger me-2"
+                            ><i class="bi bi-eye-fill"></i> View More</a
+                          >
+                          <a href="booking.html" class="btn btn-outline-primary"
+                            ><i class="bi bi-calendar-check"></i> Book Now</a
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-6 position-relative promo-right">
+                        <span class="price-badge">Starting at ₹2499/-</span>
+                        <img
+                          src="offer3.jpg"
+                          alt="Adventure Thrill"
+                          class="photo"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Offer 4 - Image Left -->
+                    <div
+                      class="promo-card row g-0 h-400 mb-4 flex-lg-row-reverse"
+                    >
+                      <div class="col-lg-6 promo-left">
+                        <h2 class="promo-title">Birthday Bash Offer</h2>
+                        <p class="text-muted mb-4">
+                          Special seasonal package to enjoy the magic of monsoon
+                          in style.
+                        </p>
+                        <ul class="promo-features list-unstyled">
+                          <li>
+                            <i class="bi bi-arrow-right-short feature-icon"></i
+                            >Stay + waterpark combo
+                          </li>
+                          <li>
+                            <i class="bi bi-currency-rupee feature-icon"></i
+                            >Free breakfast and lunch buffet
+                          </li>
+                          <li>
+                            <i class="bi bi-building feature-icon"></i
+                            >Complimentary rain dance access
+                          </li>
+                          <li>
+                            <i class="bi bi-heart-fill feature-icon"></i
+                            >Romantic evening setup for couples
+                          </li>
+                        </ul>
+                        <div class="mt-3">
+                          <a href="#" class="btn btn-danger me-2"
+                            ><i class="bi bi-eye-fill"></i> View More</a
+                          >
+                          <a href="booking.html" class="btn btn-outline-primary"
+                            ><i class="bi bi-calendar-check"></i> Book Now</a
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-6 position-relative promo-right">
+                        <span class="price-badge">Starting at ₹5299/-</span>
+                        <img
+                          src="offer4.jpg"
+                          alt="Monsoon Magic"
+                          class="photo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                  <script>
+                    // Simple JS that scrolls to a booking section (or you can change to open a modal/redirect)
+                    document
+                      .getElementById("bookNowBtn")
+                      .addEventListener("click", function () {
+                        // Replace with the ID of your booking form or booking URL
+                        window.location.hash = "#booking";
+                      });
+                    document
+                      .getElementById("bookNowBtn2")
+                      .addEventListener("click", function () {
+                        window.location.hash = "#booking";
+                      });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      <!-- Comparison Section -->
+      <section id="compare" class="container">
+        <div class="comparison-section">
+          <h2 class="comparison-title">Compare With Competitors</h2>
+          <p class="text-muted mb-4">
+            See how we stack up against other popular water resorts
+          </p>
+
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              id="searchBar"
+              class="form-control search-input"
+              placeholder="Search competitor (e.g. Imagica, Great Escape, Wet'n'Wild)"
+            />
+          </div>
+
+          <div id="comparisonResult" class="row g-4">
+            <!-- Default comparison shown on page load -->
+            <div class="col-md-6">
+              <div class="comparison-card highlight-card">
+                <div class="resort-name text-primary">
+                  🌊 BlueWave Resort
+                </div>
+                <div class="feature-item">
+                  <span class="feature-label">Price:</span>
+                  <span>$49-$89 per person</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-label">Rides:</span>
+                  <span>18 thrilling attractions</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-label">Food Rating:</span>
+                  <span>4.7★ (500+ reviews)</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-label">Lockers:</span>
+                  <span>Free for all guests</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-label">Special:</span>
+                  <span>LED Rain Dance Arena</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="comparison-card">
+                <div class="resort-name">
+                  Search for a competitor to compare
+                </div>
+                <p class="text-muted">Try searching for:</p>
+                <ul class="advantage-list">
+                  <li>Imagicaa Water Park</li>
+                  <li>Great Escape Water Park</li>
+                  <li>Wet'n'Wild Phoenix</li>
+                  <li>Typhoon Lagoon</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="notFoundMsg" class="not-found-message d-none">
+            <i class="fas fa-exclamation-circle fa-2x mb-3"></i>
+            <h4>Competitor not found</h4>
+            <p>Please try searching for one of these popular resorts:</p>
+            <div class="d-flex justify-content-center gap-3">
+              <span class="badge bg-secondary">Imagicaa</span>
+              <span class="badge bg-secondary">Great Escape</span>
+              <span class="badge bg-secondary">Wet'n'Wild</span>
+              <span class="badge bg-secondary">Typhoon Lagoon</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!--Footer-->
+      <footer class="footer-section bg-dark text-white pt-5 pb-4">
+        <div class="container">
+          <div class="row">
+            <!-- About Column -->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Aqua Paradise Resort</h5>
+              <p>
+                Experience luxury and relaxation at our world-class water
+                resort. Enjoy premium amenities, thrilling water slides, and
+                serene pools surrounded by tropical landscapes.
+              </p>
+              <div class="mt-4">
+                <a href="#" class="text-white me-3"
+                  ><i class="fas fa-phone"></i> +1 234 567 8900</a
+                ><br />
+                <a href="#" class="text-white"
+                  ><i class="fas fa-envelope"></i> info@aquaparadise.com</a
+                >
+              </div>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Quick Links</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="#" class="text-white">Home</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-white">Gallery</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-white">Prices</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-white">Rooms</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-white">Foods</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Location</h5>
+              <address>
+                <p>
+                  <i class="fas fa-map-marker-alt me-2"></i> 123 Ocean View
+                  Drive<br />Miami, FL 33101
+                </p>
+              </address>
+              <h5 class="text-uppercase mb-3">Opening Hours</h5>
+              <p>
+                Monday - Friday: 9:00 AM - 8:00 PM<br />
+                Saturday - Sunday: 8:00 AM - 10:00 PM
+              </p>
+            </div>
+
+            <!-- Newsletter Column -->
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-uppercase mb-4">Newsletter</h5>
+              <p>Subscribe to our newsletter for special offers and updates.</p>
+              <form class="mb-3">
+                <div class="input-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    aria-label="Your Email"
+                  />
+                  <button class="btn btn-primary" type="button">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+              <h5 class="text-uppercase mb-3">Follow Us</h5>
+              <div class="social-icons">
+                <a href="#" class="text-white me-3"
+                  ><i class="fab fa-facebook-f fa-lg"></i
+                ></a>
+                <a href="#" class="text-white me-3"
+                  ><i class="fab fa-twitter fa-lg"></i
+                ></a>
+                <a href="#" class="text-white me-3"
+                  ><i class="fab fa-instagram fa-lg"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4 bg-light" />
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="mb-0">
+                &copy; 2023 Aqua Paradise Resort. All rights reserved.
+              </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                  <a href="#" class="text-white">Privacy Policy</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white">Terms of Use</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white">Sitemap</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="price.js"></script>
+
+      <script>
+         
+    const yourResort = {
+      name: "🌊 AquaParadise Resort",
+      price: "$49-$89 per person",
+      rides: "18 thrilling attractions",
+      food: "4.7★ (500+ reviews)",
+      lockers: "Free for all guests",
+      special: "LED Rain Dance Arena",
+      link: "#"
+    };
+
+    const competitors = {
+      "imagica": {
+        name: "Imagicaa Water Park",
+        price: "$59-$109 per person",
+        rides: "15 attractions",
+        food: "4.2★ (300+ reviews)",
+        lockers: "$5 per locker",
+        special: "Wave Pool",
+        link: "https://www.imagicaaworld.com/water-park/",
+        advantages: [
+          "Lower prices across all packages",
+          "Free lockers (vs $5 at Imagicaa)",
+          "3 more major attractions",
+          "Higher rated food options",
+          "Unique LED Rain Dance experience"
+        ]
+      },
+      "great escape": {
+        name: "The Great Escape Water Park",
+        price: "$45-$95 per person",
+        rides: "12 attractions",
+        food: "4.0★ (200+ reviews)",
+        lockers: "$3 per locker",
+        special: "Family Raft Ride",
+        link: "http://www.greatescape.co.in/",
+        advantages: [
+          "More rides (18 vs 12)",
+          "Includes exclusive LED Rain Dance",
+          "Free lockers (vs $3 charge)",
+          "Higher cleanliness ratings",
+          "Better accessibility features"
+        ]
+      },
+      "wet'n'wild": {
+        name: "Wet'n'Wild Phoenix",
+        price: "$54-$99 per person",
+        rides: "20 attractions",
+        food: "4.3★ (400+ reviews)",
+        lockers: "$6 per locker",
+        special: "Tornado Slide",
+        link: "https://www.wetnwildphoenix.com/",
+        advantages: [
+          "Comparable pricing with more value",
+          "Free lockers (vs $6 elsewhere)",
+          "Shorter wait times for rides",
+          "More shaded relaxation areas",
+          "Free WiFi throughout park"
+        ]
+      }
+    };
+
+    document.getElementById("searchBar").addEventListener("input", function(e) {
+      const query = e.target.value.toLowerCase().trim();
+      const competitorKey = Object.keys(competitors).find(name => query.includes(name));
+
+      const resultDiv = document.getElementById("comparisonResult");
+      const notFound = document.getElementById("notFoundMsg");
+      
+      resultDiv.innerHTML = "";
+      notFound.classList.add("d-none");
+
+      if (competitorKey) {
+        const comp = competitors[competitorKey];
+        
+        resultDiv.innerHTML = `
+          <div class="col-md-6">
+            <div class="comparison-card highlight-card">
+              <div class="resort-name text-primary">${yourResort.name}</div>
+              <div class="feature-item">
+                <span class="feature-label">Price:</span>
+                <span>${yourResort.price}</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-label">Rides:</span>
+                <span>${yourResort.rides}</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-label">Food Rating:</span>
+                <span>${yourResort.food}</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-label">Lockers:</span>
+                <span>${yourResort.lockers}</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-label">Special:</span>
+                <span>${yourResort.special}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="comparison-card">
+              <div class="resort-name">${comp.name}</div>
+              <div class="feature-item">
+                <span class="feature-label">Price:</span>
+                <span>${comp.price}</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-label">Rides:</span>
+                <span>${comp.rides}</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-label">Food Rating:</span>
+                <span>${comp.food}</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-label">Lockers:</span>
+                <span>${comp.lockers}</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-label">Special:</span>
+                <span>${comp.special}</span>
+              </div>
+              <div class="feature-item mt-3">
+                <span class="feature-label">Website:</span>
+                <a href="${comp.link}" target="_blank">Visit ${comp.name.split(' ')[0]}</a>
+              </div>
+              
+              <hr class="my-3">
+              
+              <h6 class="fw-bold">Why Choose AquaParadise?</h6>
+              <ul class="advantage-list">
+               ${comp.advantages.map(p => `<li>${p}</li>`).join('')}
+              </ul>
+            </div>
+          </div>
+        `;
+      } else if (query.length >= 3) {
+        notFound.classList.remove("d-none");
+      } else {
+        // Show default comparison view
+        resultDiv.innerHTML = `
+          <div class="col-md-6">
+            <div class="comparison-card highlight-card">
+              <div class="resort-name text-primary">${yourResort.name}</div>
+              <div class="feature-item">
+                <span class="feature-label">Price:</span>
+                <span>${yourResort.price}</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-label">Rides:</span>
+                <span>${yourResort.rides}</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-label">Food Rating:</span>
+                <span>${yourResort.food}</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-label">Lockers:</span>
+                <span>${yourResort.lockers}</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-label">Special:</span>
+                <span>${yourResort.special}</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="comparison-card">
+              <div class="resort-name">Search for a competitor to compare</div>
+              <p class="text-muted">Try searching for:</p>
+              <ul class="advantage-list">
+                <li>Imagicaa Water Park</li>
+                <li>Great Escape Water Park</li>
+                <li>Wet'n'Wild Phoenix</li>
+                <li>Typhoon Lagoon</li>
+              </ul>
+            </div>
+          </div>
+        `;
+      }
+    });
+    // Check login status
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+  if (isLoggedIn === "true") {
+    document.getElementById("loginLink").classList.add("d-none");
+    document.getElementById("logoutItem").classList.remove("d-none");
+  }
+
+  // Book Now button logic
+  document.getElementById("bookBtn").addEventListener("click", function () {
+    if (isLoggedIn === "true") {
+      window.location.href = "booking.html"; // booking page
+    } else {
+      window.location.href = "login.html"; // redirect to login if not signed in
+    }
+  });
+
+  // Logout button logic
+  document.getElementById("logoutBtn").addEventListener("click", function () {
+    localStorage.removeItem("isLoggedIn");
+    window.location.href = "index.html"; // redirect to home after logout
+  });
+
+
+      </script>
+    
+  </body>
+</html>
