@@ -20,38 +20,78 @@
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand p-0" href="index.html">
-        <img src="../images/newlogo.png" alt="Azure Oasis Logo" class="d-inline-block align-text-top" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarContent"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery1.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="prices.html">Prices</a></li>
-          <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
-          <li class="nav-item"><a class="nav-link active" href="food.html">Foods</a></li>
-        </ul>
-        <ul class="navbar-nav social-icons mb-2 mb-lg-0 align-items-center">
-          <li class="nav-item"><a class="nav-link" href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-          <li class="nav-item ms-3"><a href="booking.html" id="bookBtn" class="btn btn-success">Book Now</a></li>
-          <li class="nav-item ms-2"><a href="login.html" id="loginLink" class="btn btn-outline-light">Login</a></li>
-          <li class="nav-item ms-2 d-none" id="logoutItem"><button class="btn btn-danger" id="logoutBtn">Logout</button></li>
-        </ul>
+ <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand p-0" href="index.html">
+          <img
+            src="../images/newlogo.png"
+            alt="Azure Oasis Logo"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery1.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prices.html">Prices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="food.html">Foods</a>
+            </li>
+          </ul>
+
+          <!-- Right side (social + booking + login) -->
+          <ul class="navbar-nav social-icons mb-2 mb-lg-0 align-items-center">
+
+          <ul class="navbar-nav social-icons mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="https://facebook.com" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://instagram.com" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+
+            <!-- Book Now button -->
+        <li class="nav-item ms-3">
+          <a href="booking.html" id="bookBtn" class="btn btn-success">Book Now</a>
+        </li>
+
+        <!-- Login/Logout buttons -->
+        <li class="nav-item ms-2">
+          <a href="login.html" id="loginLink" class="btn btn-outline-light">Login</a>
+        </li>
+        <li class="nav-item ms-2 d-none" id="logoutItem">
+          <button class="btn btn-danger" id="logoutBtn">Logout</button>
+        </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
   <!-- Hero -->
   <section class="hero text-center text-light d-flex align-items-center">
