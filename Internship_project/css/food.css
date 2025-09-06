@@ -21,25 +21,67 @@ body {
   box-shadow: 0 2px 15px rgba(0, 40, 85, 0.2);
   padding: 0.5rem 1rem;
   min-height: 60px;
+  z-index: 1030;
 }
+
 .navbar-brand img {
   height: 48px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
+
 .nav-link {
   color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
+  font-family: "Bebas Neue", sans-serif;
   margin: 0 5px;
   padding: 8px 12px;
   border-radius: 4px;
 }
+
 .nav-link:hover,
 .nav-link.active {
   color: white;
   background-color: var(--dark-accent);
 }
+
 .social-icons {
   display: flex;
   flex-direction: row;
+}
+
+.social-icons .nav-link {
+  padding: 5px 8px;
+  margin: 0 3px;
+}
+
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    padding: 15px;
+    z-index: 1020;
+  }
+
+  .navbar-nav .nav-item{
+    margin:5px 0px;
+
+  }
+
+  .navbar-brand img {
+    height: 42px;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 10px;
+  
+    margin-top: 10px;
+  }
 }
 @media (max-width: 991.98px) {
   .navbar-collapse {
@@ -49,15 +91,23 @@ body {
     right: 0;
     background: var(--navy);
     padding: 15px;
+    z-index: 1020;
   }
+
   .navbar-brand img {
     height: 42px;
   }
+
   .social-icons {
+    flex-direction: row;
     justify-content: flex-start;
     padding-top: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    
     margin-top: 10px;
+  }
+
+  .navbar-nav{
+    border-top: 1px solid var(--navy);
   }
 }
 
@@ -124,9 +174,8 @@ body {
     height: 400px;
   }
 
-  .content-box h1{
-  color: rgb(16, 65, 16);
-}
+  
+
 }
 
 /* Services */
